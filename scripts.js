@@ -33,7 +33,7 @@ const newCard={
     insert(){
         document.querySelector('#discipline')
         .innerHTML = `<div class="card">
-                        te amo <3
+                        te amooo <3
                       </div>`
     }
 }
