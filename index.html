@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet"> 
+    <script src="scripts.js"></script>
+    <title>flashCardApp</title>
+</head>
+<body>
+    <header><div class="logo">flashCardApp</div></header>
+    
+    <main class="container">
+        <section id="discipline">
+            <div class="card">
+                Disciplina
+            </div>
+            <div class="card">
+                Disciplina
+            </div>
+            <div class="card">
+                Disciplina
+            </div>
+            <div class="card">
+                Disciplina
+            </div>
+        </section>
+
+        <div class="buttons">
+            <a href="#" class="btn-insert" 
+            onclick="ModalDiscipline.open()">Disciplina+</a>
+
+            <a href="#" class="btn-insert"
+            onclick="ModalFlashcard.open()">Flashcard+</a>
+        </div>
+
+        <section class="table-cards">
+            <table id="data-table">
+                <tbody>
+                    <tr>
+                        <td class="tema">Tema 1</td>
+                        <td>Remover</td>
+                    </tr>
+                    <tr>
+                        <td class="tema">Tema 2</td>
+                        <td>Remover</td>
+                    </tr>
+                    <tr>
+                        <td class="tema">Tema 3</td>
+                        <td>Remover</td>
+                    </tr>
+                    <tr>
+                        <td class="tema">Tema 4</td>
+                        <td>Remover</td>
+                    </tr>
+                    <tr>
+                        <td class="tema">Tema 5</td>
+                        <td>Remover</td>
+                    </tr>
+                </tbody>
+            </table>  
+        </section>
+    </main>
+
+    <div class="modal-overlay-insert-discipline">
+        <div class="modal-insert-discipline">
+            <form action="">
+                <input type="text" class="discipline" placeholder="Disciplina">
+                <div class="input-group actions-insert-discipline">
+                    <a href="#" onclick="ModalDiscipline.close()"
+                    class="button cancel">Cancelar</a>
+                    <button>Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay-insert-flashcard">
+        <div class="modal-insert-flashcard">
+            <form action="" class="insert-flashcard">
+                <input type="text" class="theme-flashcard" placeholder="Tema">
+                <div class="input-group actions-insert-flashcard">
+                    <a href="#" onclick="ModalFlashcard.close()"
+                    class="button cancel">Cancelar</a>
+                    <button>Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+ 
+    <footer>flashCardApp</footer>
+</body>
+</html>
