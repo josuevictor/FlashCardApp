@@ -27,3 +27,14 @@ const ModalFlashcard={
     }
 }
 
+/*INSERIR CARD DISCIPLINA*/
+
+const newCard={
+    insert(){
+        document.querySelector('#discipline')
+        .innerHTML = `<div class="card">
+                        oi
+                      </div>`
+    }
+}
+

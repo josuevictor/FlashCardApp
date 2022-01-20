@@ -1,7 +1,7 @@
 /*--------GLOBAL------*/
 :root{
     
-    --color1: #4b89da;
+    --blue: #4b89da;
     --color2: #6087bb;
     --color3: #bfc5cc;
     --color4: #8193aa;
@@ -26,14 +26,14 @@ body{
 }
 
 header{
-    background: var(--color1);
+    background: var(--blue);
     padding: 2rem 0 5rem;
     text-align: center;
 }
 
 a.btn-insert{
     text-decoration: none;
-    color: var(--color1);
+    color: var(--blue);
     font-weight: 600;
 }
 
@@ -98,13 +98,12 @@ a.btn-insert{
 }
 
 button{
-    width: 50%;
-    height: 40px;
-    background: var(--green);
+    padding: 1rem;
+    background: var(--blue);
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
-    color: #ffffff;
+    color: #fff;
 }
 
 /*-----------TABLE----------*/
@@ -219,7 +218,7 @@ td.tema{
 .modal-insert-flashcard{
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 300px;
     background: #f0f2f5;
     padding: 1.4rem;
     position: relative;
@@ -261,14 +260,14 @@ form.insert-flashcard{
 
 .input-group.actions-insert-flashcard{
     display: flex;
-    width: 100%;
     margin-top: 1rem;
     justify-content: space-between;
     padding: .5rem;
+    gap: 4rem;
 }
 
 input.theme-flashcard{
-    width: 400px;
+    width: 100%;
     height: 30px;
 }
 

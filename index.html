@@ -16,18 +16,7 @@
     
     <main class="container">
         <section id="discipline">
-            <div class="card">
-                Disciplina
-            </div>
-            <div class="card">
-                Disciplina
-            </div>
-            <div class="card">
-                Disciplina
-            </div>
-            <div class="card">
-                Disciplina
-            </div>
+            
         </section>
 
         <div class="buttons">
@@ -73,7 +62,7 @@
                 <div class="input-group actions-insert-discipline">
                     <a href="#" onclick="ModalDiscipline.close()"
                     class="button cancel">Cancelar</a>
-                    <button>Salvar</button>
+                    <button id="insertDisciplineCard" onclick="newCard.insert()">Salvar</button>
                 </div>
             </form>
         </div>
@@ -86,7 +75,7 @@
                 <div class="input-group actions-insert-flashcard">
                     <a href="#" onclick="ModalFlashcard.close()"
                     class="button cancel">Cancelar</a>
-                    <button>Salvar</button>
+                    <button class="save-flash-card">Salvar</button>
                 </div>
             </form>
         </div>
